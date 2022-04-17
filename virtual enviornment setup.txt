@@ -1,0 +1,44 @@
+########################################################################################################################
+########################################################################################################################
+# With anaconda create enviornment called hida with python 3.7
+########################################################################################################################
+# Check virtual enviornments currently have
+conda info --envs
+
+# create conda virtual env
+conda create -n hidaenv python=3.8.5 flask
+
+# start enviornment
+conda activate hidaenv
+
+# open python check if verions match
+python
+
+conda install pyodbc pandas Flask-SQLAlchemy comtypes xlwings colorama WTForms Flask-WTF flask-login openpyxl fsspec
+conda install json 
+ 
+# shut venv off
+deactivate
+
+# remove virtual env
+conda remove --name hidaenv --all
+
+# check if its gone
+conda info --envs
+
+#######################################################
+Step 1) Start virtual enviornment 
+py -m venv venv
+
+Step 2) Activate the virtual env
+venv\Scripts\activate
+
+
+Step 3)pip install -r requirements.txt
+
+
+set FLASK_ENV=development
+
+Wrapping lines in code with (((# %%))) allows you to run externally in new window
+    - Example
+    - # %% print("hello world") # %%

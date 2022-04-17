@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="pcoded-main-container">
+        
+        <div class="auth-wrapper">
+            <div class="auth-content">
+                <div class="card">
+                    <div class="row align-items-center text-center">
+                        <div class="col-md-12">
+                            <div class="card-body">
+                                <img src="/static/assets/images/stryker.png" alt="" class="img-fluid mb-4">
+                                <h4 class="mb-3 f-w-400">Upload Files</h4>
+                                
+                               
+                                <div class="center">
+                                    <form method="POST"  enctype="multipart/form-data">
+                                        <div class="center">
+                                            <input class="btn btn-block btn-outline-primary mb-4" type="file" name="files[]" multiple="true" autocomplete="off" required>
+                                            <input class="btn btn-block btn-primary mb-4" type="submit" value="Submit">
+                                     
+                                    </form>
+                                </div>
+                                
+                                <p class="mb-2 text-muted">More than one file at a time!</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+</body>
+</html>
